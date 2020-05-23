@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-05-2020 a las 22:02:37
--- Versión del servidor: 10.1.38-MariaDB
--- Versión de PHP: 7.3.2
+-- Tiempo de generación: 23-05-2020 a las 21:31:17
+-- Versión del servidor: 10.4.11-MariaDB
+-- Versión de PHP: 7.4.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -31,9 +30,15 @@ SET time_zone = "+00:00";
 CREATE TABLE `comandosgit` (
   `id_comandoGit` int(11) NOT NULL,
   `comando` varchar(30) NOT NULL,
-  `descripcion` text NOT NULL,
-  `id_funcion` int(120) NOT NULL
+  `descripcion` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `comandosgit`
+--
+
+INSERT INTO `comandosgit` (`id_comandoGit`, `comando`, `descripcion`) VALUES
+(1, 'git merge', 'une la rama actual con la mensionada');
 
 --
 -- Índices para tablas volcadas
@@ -43,8 +48,7 @@ CREATE TABLE `comandosgit` (
 -- Indices de la tabla `comandosgit`
 --
 ALTER TABLE `comandosgit`
-  ADD PRIMARY KEY (`id_comandoGit`),
-  ADD KEY `id_funcion` (`id_funcion`);
+  ADD PRIMARY KEY (`id_comandoGit`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -54,7 +58,7 @@ ALTER TABLE `comandosgit`
 -- AUTO_INCREMENT de la tabla `comandosgit`
 --
 ALTER TABLE `comandosgit`
-  MODIFY `id_comandoGit` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_comandoGit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
