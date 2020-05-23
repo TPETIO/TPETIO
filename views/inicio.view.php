@@ -3,10 +3,9 @@
     class VistaInicio{
         private $smarty;
         public function imprimirInicio($comandos, $funciones){
-            $smarty = new Smarty(); 
-            $this->smarty->asing('funciones', $funciones);  
-            $this->smarty->asing('comandos', $comandos);
-            $smarty->display('inicio.tpl');
+            $this->smarty = new Smarty();
+            $this->smarty->assign('comandos', $comandos);
+            $this->smarty->display('inicio.tpl');
         }
       
     }

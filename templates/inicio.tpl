@@ -1,6 +1,5 @@
 {include 'header.tpl'}
 
-<div id="accordion">
     {foreach $comandos item=comando }
         <p>
             <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">

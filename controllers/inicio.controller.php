@@ -6,10 +6,7 @@ class ControladorInicio{
     private $modelo;
     private $vista;
 
-    public function __construct()
-
-    
-    {
+    public function __construct(){
         $this->modelo = new ModeloInicio();
         $this->vista = new VistaInicio();
     }
