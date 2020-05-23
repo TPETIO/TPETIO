@@ -24,5 +24,5 @@ class ClaseModelo{
         $sentencia->execute();
         $funciones = $sentencia->fetchAll(PDO::FETCH_OBJ);
         return $funciones;
-   }
+    }
 }
