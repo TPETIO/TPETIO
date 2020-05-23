@@ -1,7 +1,7 @@
 <?php
 
-class ClaseModelo{
-    private function crearConeccion(){
+class ModeloInicio{
+    private function crearConexion(){
         $host = 'localhost';
         $userName = 'root';
         $password = '';
@@ -11,8 +11,8 @@ class ClaseModelo{
     }
 
     public function traerTodosComandos(){
-         $db = $this->crearConeccion();
-         $sentencia = $db->prepare("SELECT * FROM db_comandosGit");
+         $db = $this->crearConexion();
+         $sentencia = $db->prepare("SELECT * FROM comandosGit");
          $sentencia->execute();
          $comandos = $sentencia->fetchAll(PDO::FETCH_OBJ);
          return $comandos;

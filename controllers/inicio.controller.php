@@ -1,15 +1,17 @@
 <?php
-require_once 'view/inicio.view.php';
-require_once 'model/unmodelo.model.php';
+require_once 'views/inicio.view.php';
+require_once 'models/inicio.model.php';
 
 class ControladorInicio{
     private $modelo;
     private $vista;
 
     public function __construct()
+
+    
     {
-        $this->modelo = new ClaseModelo();
-        $this->vista = new ClaseVista();
+        $this->modelo = new ModeloInicio();
+        $this->vista = new VistaInicio();
     }
 
     public function mostrarInicio(){
