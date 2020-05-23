@@ -17,4 +17,12 @@ class ClaseModelo{
          $comandos = $sentencia->fetchAll(PDO::FETCH_OBJ);
          return $comandos;
     }
+
+    public function traerTodasFunciones(){
+        $db = $this->crearConeccion();
+        $sentencia = $db->prepare("SELECT * FROM db_comandosGit");
+        $sentencia->execute();
+        $funciones = $sentencia->fetchAll(PDO::FETCH_OBJ);
+        return $funciones;
+   }
 }
