@@ -1,6 +1,6 @@
 <?php
-require_once 'view/inicio.view.php';
-require_once 'model/unmodelo.model.php';
+require_once 'views/inicio.view.php';
+require_once 'models/unmodelo.model.php';
 
 class ControladorInicio{
     private $modelo;
