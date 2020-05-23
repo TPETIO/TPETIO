@@ -9,7 +9,7 @@
  
     switch ($urlAction[0]){
         case '': {
-            $ctrl= new NombreClase();
+            $ctrl= new ControladorInicio();
            $ctrl ->mostrarInicio();
         } break;
     }
