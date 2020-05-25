@@ -10,3 +10,27 @@
 .contenedor{
     margin: 30px;
 }
+.contedorError{
+    width: 90%;
+    height:max-content ;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    
+}
+.cajaError{
+    border: rgb(59, 155, 214) solid 3px;
+    text-align: center;
+    font-family: fantasy;
+    -webkit-text-stroke: 2px black;
+    color: white; 
+    font-size: 40px;
+}
+.tituloError{
+    width: 100%;
+    font-size: 40px;
+    background-color: rgb(59, 155, 214);
+}
+.Error{
+    padding: 30px;
+}

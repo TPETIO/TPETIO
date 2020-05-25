@@ -10,6 +10,10 @@
     switch ($urlAction[0]){
         case '': {
             $ctrl= new ControladorInicio();
-           $ctrl ->mostrarInicio();
+            $ctrl ->mostrarInicio();
         } break;
+        default:{
+            $ctrl= new ControladorInicio();
+            $ctrl ->mostrarError();
+        }
     }

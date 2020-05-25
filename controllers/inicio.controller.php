@@ -14,6 +14,10 @@ class ControladorInicio{
     public function mostrarInicio(){
         $comandos = $this->modelo->traerTodosComandos();
         $funciones = $this->modelo->traerTodasFunciones();
-        $this->vista->imprimirInicio($comandos, $funciones);
+        $this->vista->imprimirInicio($comandos);
     }
+    public function mostrarError(){
+        $this->vista->imprimirError();
+    }
+
 }

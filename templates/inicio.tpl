@@ -11,6 +11,10 @@
             <div class="card card-body">
                 {$comando->descripcion}
             </div>
+            <div class="card card-body">
+                <h5>Ejemplo: </h5>
+                <p class="ejemplo"> {$comando->ejemplo}</p>
+            </div>
         </div>
     {/foreach}
 </div>
