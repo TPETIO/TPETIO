@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-05-2020 a las 16:34:08
+-- Tiempo de generación: 25-05-2020 a las 23:24:22
 -- Versión del servidor: 10.4.11-MariaDB
--- Versión de PHP: 7.4.6
+-- Versión de PHP: 7.4.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -59,7 +59,10 @@ INSERT INTO `comandosgit` (`id_comandoGit`, `comando`, `descripcion`, `ejemplo`)
 (21, 'git push origin NombreDeBranch\r\n', 'Luego de que hicimos un git commit, si estamos trabajando remotamente, este comando va a subir los archivos al repositorio remoto, específicamente al branch que indiquemos.\r\n', 'git push origin master'),
 (22, 'git pull origin NombreDeBranch\r\n', 'Hace una actualización en nuestro branch local, desde un branch remoto que indicamos en el comando.\r\n', 'git pull origin rama_router'),
 (23, 'git diff\r\n', 'Este comando se usa para hacer una lista de conflictos. Para poder ver conflictos con el archivo base usa:', 'git diff --base <file-name>\r\n'),
-(24, 'git diff entre ramas', 'El siguiente comando se usa para ver los conflictos que hay entre ramas que están por ser fusionadas para poder fusionarlas sin problemas:\r\n', 'git diff <source-branch> <target-branch>\r\n');
+(24, 'git diff entre ramas', 'El siguiente comando se usa para ver los conflictos que hay entre ramas que están por ser fusionadas para poder fusionarlas sin problemas:\r\n', 'git diff <source-branch> <target-branch>\r\n'),
+(25, 'git log\r\n', 'Ejecutar este comando muestra una lista de commits en una rama junto con todos los detalles. \r\n', 'commit 15f4b6c44b3c8344caasdac9e4be13246e21sadw\r\n\r\nAuthor: Alex Hunter <alexh@gmail.com>\r\nDate:   Mon Oct 1 12:56:29 2016 -0600\r\n'),
+(26, 'git reset\r\n', 'Para resetear el index y el directorio que está trabajando al último estado comprometido se usa este comando', 'git reset - -hard HEAD\r\n'),
+(27, 'git rm\r\n', 'Este comando se puede usar para remover archivos del index y del directorio que está trabajando', 'git rm filename.txt\r\n');
 
 --
 -- Índices para tablas volcadas
@@ -79,7 +82,7 @@ ALTER TABLE `comandosgit`
 -- AUTO_INCREMENT de la tabla `comandosgit`
 --
 ALTER TABLE `comandosgit`
-  MODIFY `id_comandoGit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id_comandoGit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
